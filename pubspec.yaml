@@ -1,0 +1,121 @@
+name: correct_score
+description: Correct Score — Plateforme premium de prédictions sportives
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── État / Architecture ────────────────────────────────────
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  go_router: ^13.0.1
+
+  # ── Réseau ────────────────────────────────────────────────
+  dio: ^5.4.0
+  pretty_dio_logger: ^1.3.1
+  retrofit: ^4.1.0
+  connectivity_plus: ^5.0.2
+
+  # ── Stockage sécurisé ─────────────────────────────────────
+  flutter_secure_storage: ^9.0.0
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # ── Firebase ──────────────────────────────────────────────
+  firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.10
+  firebase_analytics: ^10.8.0
+
+  # ── UI / Design ────────────────────────────────────────────
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.4.0+1
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.1
+  lottie: ^3.0.0
+  flutter_svg: ^2.0.9
+  smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+  fl_chart: ^0.66.2
+  badges: ^3.1.2
+  percent_indicator: ^4.2.3
+  pull_to_refresh: ^2.0.0
+  skeletonizer: ^1.1.0
+
+  # ── Paiement ──────────────────────────────────────────────
+  stripe_flutter: ^6.1.0
+  in_app_purchase: ^3.1.13
+
+  # ── PDF / Reçu ────────────────────────────────────────────
+  pdf: ^3.10.7
+  printing: ^5.12.0
+  path_provider: ^2.1.2
+  open_file: ^3.3.2
+  share_plus: ^7.2.1
+  permission_handler: ^11.2.0
+
+  # ── Screenshot protection ─────────────────────────────────
+  screenshot_callback: ^0.3.4
+  flutter_windowmanager: ^0.2.0
+
+  # ── Localisation ──────────────────────────────────────────
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+
+  # ── Autres ────────────────────────────────────────────────
+  image_picker: ^1.0.7
+  url_launcher: ^6.2.4
+  local_auth: ^2.1.8
+  package_info_plus: ^5.0.1
+  device_info_plus: ^9.1.2
+  uuid: ^4.3.3
+  logger: ^2.0.2+1
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  flutter_html: ^3.0.0-beta.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+  freezed: ^2.4.6
+  json_serializable: ^6.7.1
+  retrofit_generator: ^8.1.0
+  riverpod_generator: ^2.3.9
+  custom_lint: ^0.5.7
+  riverpod_lint: ^2.3.7
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Montserrat-Black.ttf
+          weight: 900
